@@ -1,0 +1,8 @@
+{
+  "name": "trainee-api-icomida-2k21-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/occamengenharia/trainee-api-icomida-2k21-1.git",
+  "author": "Gabriel Junges Baratto <gabrieljbaratto@gmail.com>",
+  "license": "MIT"
+}
