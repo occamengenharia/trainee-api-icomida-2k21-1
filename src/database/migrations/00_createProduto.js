@@ -1,7 +1,7 @@
 const up = (knex) => {
 	return knex
 	.schema
-	.createTable('produto', table => {
+	.createTable('Produto', table => {
 	  table.increments('id').primary();
 	  table.string('nome', 50).notNullable;
 	  table.float('preco').notNullable;
@@ -12,7 +12,7 @@ const up = (knex) => {
   const down = (knex) => {
 	return knex
 	.schema
-	.dropTable('produto');
+	.dropTable('Produto');
   }
   
   module.exports = { up, down }

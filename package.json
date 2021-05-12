@@ -6,7 +6,15 @@
   "author": "Gabriel Junges Baratto <gabrieljbaratto@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.17.1",
     "knex": "^0.95.5",
     "sqlite3": "^5.0.2"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
