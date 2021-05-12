@@ -8,7 +8,7 @@ class CreateProductService{
 			preco,
 			proprietario
 		});
-		
+		//throw new Error();
 		return {
 			id,
 			nome,
