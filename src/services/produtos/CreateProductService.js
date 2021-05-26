@@ -27,7 +27,7 @@ class CreateProductService{
 			nome,
 			preco,
 			proprietario,
-			"categoria":categoria.nome
+			"categoria":categoria.Nome
 		};
 		
 	}
