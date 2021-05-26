@@ -8,7 +8,6 @@ class CategoriasContoller{
 
     async create(request,response){
 		const {nome} = request.body;
-		console.log("oie");
 
 		const CCS = new CreateCategoriaService();
 
@@ -17,7 +16,6 @@ class CategoriasContoller{
 		return response.json(data);
 	}
     async list(request,response){
-		console.log("oie");
 		const LCS = new ListCategoriaService();
 
 		const data = await LCS.execute();
