@@ -8,7 +8,6 @@ class ProductController{
 
 	async create(request,response){
 		const {nome,preco,proprietario} = request.body;
-		console.log("\n\n\n asdjhjdahdahd\n\n\n");
 
 		const CPS = new CreateProductService();
 
@@ -18,7 +17,6 @@ class ProductController{
 	}
 
 	async list(request,response){
-		console.log("\n\n\n asdjhjdahdahd\n\n\n");
 		const LPS = new ListProductService();
 
 		const data = await LPS.execute();
