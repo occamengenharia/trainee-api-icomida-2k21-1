@@ -1,6 +1,6 @@
 const {Router} = require('express');
 const ProductController = require('./controllers/ProductController');
-const CategoriasContoller= require('/home/matheus/Desktop/Occam/trainee-api-icomida-2k21-1/src/controllers/CategoriasContoller.js');
+const CategoriasContoller = require('./controllers/CategoriasContoller');
 const resolver = require('./utils/express-adapter');
 const routes = Router();
 
