@@ -12,6 +12,10 @@ class DeleteCategoriaService{
 			throw new Error('Categoria não encontrada');
 		}
 
+		await knex.from('Categoria').where({
+			id
+		}).del();
+
 		return Categoria;
 		
 	}
