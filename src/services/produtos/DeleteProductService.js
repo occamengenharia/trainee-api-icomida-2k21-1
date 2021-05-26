@@ -9,9 +9,13 @@ class DeleteProductService{
 		});
 
 		if(!produto){
-			throw new Error('usuário não encontrado');
+			throw new Error('produto não encontrado');
 		}
 
+		await knex.from('Produto').where({
+			id
+		}).del();
+		
 		return produto;
 		
 	}

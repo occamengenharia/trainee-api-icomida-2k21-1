@@ -15,9 +15,9 @@ routes.put( '/produtos/:id' , [resolver(productController.update)] );
 routes.delete( '/produtos/:id' , [resolver(productController.delete)] );
 
 routes.get( '/categorias' , [resolver(categoriasController.list)] );
-routes.delete( '/categorias:id' , [resolver(categoriasController.delete)] );
-routes.put( '/categorias:id' , [resolver(categoriasController.update)] );
+routes.delete( '/categorias/:id' , [resolver(categoriasController.delete)] );
+routes.put( '/categorias/:id' , [resolver(categoriasController.update)] );
 routes.post( '/categorias' , [resolver(categoriasController.create)] );
-routes.get( '/categorias:id' , [resolver(categoriasController.show)] );
+routes.get( '/categorias/:id' , [resolver(categoriasController.show)] );
 
 module.exports = routes;
