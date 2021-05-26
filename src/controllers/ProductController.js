@@ -7,11 +7,11 @@ const UpdateProductService = require('../services/produtos/UpdateProductService'
 class ProductController{
 
 	async create(request,response){
-		const {nome,preco,proprietario} = request.body;
+		const {nome,preco,proprietario,id_categoria} = request.body;
 
 		const CPS = new CreateProductService();
 
-		const data = await CPS.execute({nome,preco,proprietario});
+		const data = await CPS.execute({nome,preco,proprietario,id_categoria});
 
 		return response.json(data);
 	}
