@@ -4,7 +4,7 @@ const knex = require('../../database/connection');
 class CreateProductService{
 	async execute({nome, preco, proprietario, id_categoria}){		
 		const [categoria] = await knex('Categoria').select('*').where({
-			id_categoria
+			'id':id_categoria
 		});
 		
 		if(!categoria){
@@ -18,18 +18,16 @@ class CreateProductService{
 		});
 
 		await knex.from('CategoriaProduto').insert({
-			id_categoria,
-			id
+			'id_categoria':id_categoria,
+			'id_produto':id
 		});
-
-		nomeCategoria = categoria.nome
 
 		return {
 			id,
 			nome,
 			preco,
 			proprietario,
-			nomeCategoria
+			"categoria":categoria.nome
 		};
 		
 	}
